@@ -346,4 +346,3 @@ public class OPC
     sendFirmwareConfigPacket();
   }
 }
-
