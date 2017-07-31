@@ -1,0 +1,18 @@
+#! /bin/bash
+
+# config files
+
+# Janky - assumes all linux is raspberry pi / arm
+case "$OSTYPE" in
+  linux*)   
+    FC_SERVER_CMD=../vendor/fadecandy/bin/fcserver-rpi ;;
+
+  darwin*)
+    FC_SERVER_CMD=../vendor/fadecandy/bin/fcserver-osx ;; 
+
+  msys* | solaris* | bsd* | *)
+    echo "Unkown platform"
+    exit 1 ;;
+esac
+
+$FC_SERVER_CMD
