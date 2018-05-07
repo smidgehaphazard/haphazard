@@ -1,3 +1,5 @@
+package shows;
+
 /**
  * A Ceiling show that fills the canvas with a solid color.
  */
