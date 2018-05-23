@@ -1,9 +1,7 @@
-
-
 /**
  * A Ceiling show that fills the canvas with a solid color.
  */
-public class SolidShow implements Show {
+public class SolidShow extends Show {
   private final int bgColor;
 
   /**

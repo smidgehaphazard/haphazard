@@ -1,1 +1,1 @@
-../../../vendor/fadecandy-package-02/examples/processing/template/OPC.pde
+../../../vendor/fadecandy/examples/processing/template/OPC.pde
