@@ -1,0 +1,24 @@
+[Unit]
+Description=Lounge Control Service
+
+After=network.target
+Wants=network-online.target
+
+Requires=olad.service
+After=olad.service
+
+
+[Service]
+Type=simple
+User=smidge
+Group=smidge
+
+Restart=always
+RestartSec=10
+
+
+WorkingDirectory=~/haphazard/control/lounge
+ExecStart=./lounge.py
+
+[Install]
+WantedBy=default.target

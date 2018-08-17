@@ -183,7 +183,8 @@ class ColorPalletFadeDriver:
         self.color_fader.step()
         self.current_colors[self.current_changing_idx] = self.color_fader.output()
 
-        print ", ".join([str(c) for c in self.current_colors])
+        # TODO control verbosity
+        #print ", ".join([str(c) for c in self.current_colors])
         if self.color_fader.is_done():
             self._setup_fader()
 
@@ -359,7 +360,8 @@ class Driver:
 
             # XXX decouple render rate from frame rate 
             #sleep(0.010)
-            sleep(0.100)
+            #sleep(0.100)
+            sleep(0.001)
             # sleep(TICK_INTERVAL) # XXX sleep until next render dealine instead
         
         self.osc_server.close()
